@@ -1,10 +1,4 @@
-<h1 align="center">
-    Workout Webapp - v1.0
-</h1>
-
-<div align="center">
-    <img src="./public/images/logo-no-background.svg"/>
-</div>
+# Workout Webapp - v1.0
 
 [![Licence](https://img.shields.io/badge/License-MIT-blue.svg?color=blue&style=for-the-badge)](./LICENSE) &nbsp;
 ![GitHub Repo stars](https://img.shields.io/github/stars/LostWhiteHat/portfolio?color=red&logo=github&style=for-the-badge) &nbsp;

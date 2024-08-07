@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+    Workout Webapp - v1.0
+</h1>
+
+<div align="center">
+    <img src="./public/images/logo-no-background.svg"/>
+</div>
+
+[![Licence](https://img.shields.io/badge/License-MIT-blue.svg?color=blue&style=for-the-badge)](./LICENSE) &nbsp;
+![GitHub Repo stars](https://img.shields.io/github/stars/LostWhiteHat/portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
+![GitHub Repo stars](https://img.shields.io/github/forks/LostWhiteHat/portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
+
+## About
+
+The repo is an open source project and can be forked, modified, used for your own purposes or for any other purpose described in the MIT license.
 
 ## Getting Started
 
-First, run the development server:
+First, you have to install the dependencies:
+
+npm:
+
+```bash
+npm install
+```
+
+yarn:
+
+```bash
+yarn install
+```
+
+pnpm:
+
+```bash
+pnpm install
+```
+
+\
+Second, run the development server:
+
+npm:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+yarn:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+pnpm:
 
-## Learn More
+```bash
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Docker
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+If you want to deploy the webapp on Docker:
 
-## Deploy on Vercel
+### Requirements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Docker
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+docker build -t nextjs-docker .
+```
+
+```bash
+docker run -p 3000:3000 nextjs-docker
+```
+
+- Docker-Compose
+
+```bash
+docker compose up -d
+```
+
+## Credits
+
+[![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)](https://github.com/vercel/next.js/)
+[![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://github.com/facebook/react)
+[![React Icons](https://img.shields.io/badge/React%20Icons-red?style=for-the-badge&logo=react&logoColor=black)](https://github.com/react-icons/react-icons)
+[![Tailwindcss](https://img.shields.io/badge/Tailwindcss-blue?style=for-the-badge&logo=tailwindcss&logoColor=marine)](https://github.com/tailwindlabs/tailwindcss)

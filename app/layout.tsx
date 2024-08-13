@@ -1,6 +1,7 @@
 import type {Metadata} from "next";
 import NextAuthProvider from "@/app/components/authprovider";
 import "./globals.css";
+import Header from "@/app/components/header";
 
 export const metadata: Metadata = {
     title: "Workout app",
@@ -14,9 +15,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <NextAuthProvider>
-            <body>{children}</body>
-        </NextAuthProvider>
+            <body>
+                <Header/>
+                <main>{children}</main>
+
+            </body>
         </html>
     );
 }
